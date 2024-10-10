@@ -4,10 +4,10 @@
 
 Foundry consists of:
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
+- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
+- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
+- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
 
 ## Documentation
 
@@ -64,3 +64,7 @@ $ forge --help
 $ anvil --help
 $ cast --help
 ```
+
+forge test --match-test testVersion -vvv --fork-url $SEPOLIA_RPC_URL:
+
+the above command where it says "--fork-url $SEPOLIA_RPC_URL" will fork(copy) the Sepolia network onto the temporal Anvil so we can grab the Aggregator interface during test
